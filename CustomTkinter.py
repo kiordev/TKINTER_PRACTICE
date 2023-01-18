@@ -19,7 +19,7 @@ main_name_label = tk.Label(main_window,text="Hello world!", #Hello world Label
 button_left = customtkinter.CTkButton(master=main_window,
                         text="Left Button",
                         fg_color="#E91AD6",
-                        hover_color="red"
+                        hover_color="blue"
 
                         )
 button_center = customtkinter.CTkButton(master=main_window,
