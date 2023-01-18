@@ -43,3 +43,12 @@
 #
 #                    )
 # label_1.pack() - для того, чтобы лейбл (появился)
+# --- Button---
+# counter_button = tk.Button(window,
+#                            bg='blue',
+#                            fg='white',
+#                            text="Counter",
+#                            activebackground="purple",
+#                            command="some_funtion"
+#                            )
+# counter_button.pack(anchor='nw',padx=20,pady=30)
