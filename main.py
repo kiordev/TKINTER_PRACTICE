@@ -5,7 +5,7 @@ main_window.resizable(False, False)
 main_window.geometry("500x500")
 main_window.config(bg="#55324D")
 icon = tk.PhotoImage(file='some_png.png')
-main_window.iconphoto(False,icon)
+main_window.iconphoto(True,icon)
 
 #Виджеты
 main_name_label = tk.Label(main_window,text="Hello world!", #Hello world Label

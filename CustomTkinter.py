@@ -5,28 +5,31 @@ customtkinter.set_appearance_mode("dark")  # Modes: system (default), light, dar
 customtkinter.set_default_color_theme("dark-blue")  # Themes: blue (default), dark-blue, green
 #Main_Window_Option
 main_window = customtkinter.CTk()
+main_window = customtkinter.CTk(fg_color="#382441")
 main_window.resizable(False, False)
 main_window.geometry("500x500")
-icon = tk.PhotoImage(file='some_png.png')
-main_window.iconphoto(False,icon)
+
 
 #Виджеты
 main_name_label = tk.Label(main_window,text="Hello world!", #Hello world Label
-                           bg="blue",
+                           bg="#382441",
                            fg="white",
                            font=("Arial",20,"bold")
                            )
 button_left = customtkinter.CTkButton(master=main_window,
                         text="Left Button",
-                        fg_color="#E91AD6",
-                        hover_color="blue"
-
+                        fg_color="#00655E",
+                        hover_color="#00CDBF"
                         )
 button_center = customtkinter.CTkButton(master=main_window,
                         text="Center Button",
+                        fg_color="#00655E",
+                        hover_color="#00CDBF"
                         )
 button_right = customtkinter.CTkButton(master=main_window,
                         text="Right Button",
+                        fg_color="#00655E",
+                        hover_color="#00CDBF"
                         )
 # Запуск виджетов
 main_name_label.pack(anchor='nw', padx=5, pady=10)

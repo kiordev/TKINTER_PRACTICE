@@ -52,3 +52,13 @@
 #                            command="some_funtion"
 #                            )
 # counter_button.pack(anchor='nw',padx=20,pady=30)
+
+# --- Размещение виджетов метод Grid ---
+# widget.grid(row=2, - ряд
+# column=0, - колонка
+# columnspan=2/ rowspan, - растяжение по колонке
+# stick="we", - растягивание по сторонам света для занятия всего места
+
+# win.columnconfigure(0,minsize=100) - минимальные размеры колонок
+# win.columnconfigure(1,minsize=100)
+# )
