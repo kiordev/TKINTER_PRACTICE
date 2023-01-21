@@ -58,7 +58,24 @@
 # column=0, - колонка
 # columnspan=2/ rowspan, - растяжение по колонке
 # stick="we", - растягивание по сторонам света для занятия всего места
-
+# sticky=W, - прибивка к какой-то стороне
+# #Пример цикла для создания колонок
+# for i in range(5):
+#     for j in range(2):
+#         tk.Button(win,text=f" Button: {i} {j}", bg="blue", fg="white").grid(row=i, column=j, stick="w")
 # win.columnconfigure(0,minsize=100) - минимальные размеры колонок
 # win.columnconfigure(1,minsize=100)
 # )
+# --- Entry ---
+# name = tk.Entry(main_window) - создание поля для ввода
+# name.grid(row=0, column=1)
+# def get_entry(): - создание поля для ввода
+#     value = name.get() - метод получения значения поля для ввода
+#     if value:
+#         print(value)
+#     else:
+#         print("Empty")
+# def delete_entry():
+#     name.delete(1,3) - метод удаления (от первого символа до 3)
+
+

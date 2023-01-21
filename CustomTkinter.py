@@ -1,58 +1,18 @@
-import tkinter
 import tkinter as tk
+from tkinter import LEFT, W
+
 import customtkinter
-customtkinter.set_appearance_mode("dark")  # Modes: system (default), light, dark
-customtkinter.set_default_color_theme("dark-blue")  # Themes: blue (default), dark-blue, green
-#Main_Window_Option
-main_window = customtkinter.CTk()
-main_window = customtkinter.CTk(fg_color="#382441")
-main_window.resizable(False, False)
-main_window.geometry("500x500")
 
+# Main Window Settings
+customtkinter.set_appearance_mode("dark")
+customtkinter.set_default_color_theme("blue")
+root = customtkinter.CTk(fg_color="#3C143C")
+root.geometry("300x300")
+root.resizable(False, False)
+root.title("Custom Entry Test")
 
-#Виджеты
-main_name_label = tk.Label(main_window,text="Hello world!", #Hello world Label
-                           bg="#382441",
-                           fg="white",
-                           font=("Arial",20,"bold")
-                           )
-button_left = customtkinter.CTkButton(master=main_window,
-                        text="Left Button",
-                        fg_color="#00655E",
-                        hover_color="#00CDBF"
-                        )
-button_center = customtkinter.CTkButton(master=main_window,
-                        text="Center Button",
-                        fg_color="#00655E",
-                        hover_color="#00CDBF"
-                        )
-button_right = customtkinter.CTkButton(master=main_window,
-                        text="Right Button",
-                        fg_color="#00655E",
-                        hover_color="#00CDBF"
-                        )
-# Запуск виджетов
-main_name_label.pack(anchor='nw', padx=5, pady=10)
-button_left.pack(anchor=tkinter.NW, padx=10, pady=10)
-button_center.pack(anchor=tkinter.NW, padx=10, pady=10)
-button_right.pack(anchor=tkinter.NW, padx=10, pady=10)
+login_entry_field = tk.Entry(root)
+login_entry_field.grid()
 
-main_window.mainloop()
-
-# import tkinter
-# import customtkinter
-#
-# customtkinter.set_appearance_mode("System")  # Modes: system (default), light, dark
-# customtkinter.set_default_color_theme("blue")  # Themes: blue (default), dark-blue, green
-#
-# app = customtkinter.CTk()  # create CTk window like you do with the Tk window
-# app.geometry("400x240")
-#
-# def button_function():
-#     print("button pressed")
-#
-# # Use CTkButton instead of tkinter Button
-# button = customtkinter.CTkButton(master=app, text="CTkButton", command=button_function)
-# button.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
-#
-# app.mainloop()
+print(login_entry_field.get())
+root.mainloop()
